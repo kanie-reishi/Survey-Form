@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap');
+
+:root {
+  --color-white: #c59f9f;
+  --color-darkblue: #313146;
+  --color-darkblue-alpha: rgba(29, 29, 51, 0.8);
+  --color-green: #3bcf74;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  background: var(--color-darkblue);
+  background-image: linear-gradient(45deg, blue, red );
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 400;
+    line-height: 1.2;
+    color: var(--color-white);
+}
+
+p {
+    font-size: 1.125rem;
+    color: var(--color-white);
+}
+
+h1,
+p {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
+}
+
+input,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: var(--color-white);
+}
+
+.body {
+    width: 100%;
+    margin: 3rem auto 0 auto;
+}
+
+@media (min-width: 576px) {
+  .body {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .body {
+    max-width: 720px;
+  }
+}
+
+.header {
+  padding: 0 0.7rem;
+  margin-bottom: 1.9rem;
+}
+
+#description {
+  text-align: center;
+  font-style: italic;
+  font-weight: 200;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.39);
+  color: var(--color-white);
+}
+form {
+  background: var(--color-darkblue-alpha);
+  padding: 2.5rem 0.7rem;
+  border-radius: 0.25rem;
+}
+
+@media (min-width: 480px) {
+  form {
+    padding: 2.5rem;
+  }
+}
+
+.form-group {
+  margin: 0 auto 1.25rem auto;
+  padding: 0.25rem;
+}
+
+
+.input-radio,
+.input-checkbox {
+  display: inline-block;
+  margin-right: 0.7rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 100%;
+  padding: 0.7rem;
+  resize: vertical;
+}
+
+.submit-button {
+  text-align: center;
+  text-decoration-color: #34346b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  padding: 0.75rem;
+  background: var(--color-green);
+  color: inherit;
+  border-radius: 2px;
+  cursor: pointer;
+}
